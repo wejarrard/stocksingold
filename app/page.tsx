@@ -133,8 +133,8 @@ export default function Home() {
     <div
       className="relative min-h-screen w-full overflow-x-hidden"
       style={{
-        backgroundImage: `linear-gradient(${gradientPos.get()}deg, #1a2a6c, #b21f1f, #fdbb2d)`,
-        backgroundSize: '300% 300%',
+        backgroundImage: `linear-gradient(to right, #1a2a6c, #fdbb2d)`,
+        backgroundSize: '100% 100%',
         transition: 'background-position 0.5s ease-in-out',
       }}
       ref={containerRef}
