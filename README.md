@@ -2,7 +2,7 @@
 
 A data visualization tool that shows the S&P 500 index priced in gold ounces instead of USD, allowing viewers to distinguish between genuine value creation and the illusion of growth caused by currency devaluation.
 
-![Gold-Adjusted SPY Index Screenshot](screenshot.png)
+https://stocksingold.vercel.app/
 
 ## About this Project
 
