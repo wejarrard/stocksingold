@@ -96,6 +96,10 @@ export default function ChartContainer({ combinedData, isLoading, error, goldSta
       duration: 1000,
       easing: 'easeOutQuart',
     },
+    interaction: {
+      mode: 'index',
+      intersect: false,
+    },
     scales: {
       x: {
         type: 'time',
@@ -187,6 +191,7 @@ export default function ChartContainer({ combinedData, isLoading, error, goldSta
         bodyColor: '#fff',
         mode: 'index',
         intersect: false,
+        position: 'nearest',
         callbacks: {
           title: (context) => {
             if (context[0]?.label) {
@@ -211,6 +216,19 @@ export default function ChartContainer({ combinedData, isLoading, error, goldSta
               return `SPY in Gold: ${data.spyInGold.toFixed(4)} oz`;
             }
           }
+        }
+      },
+      crosshair: {
+        line: {
+          color: 'rgba(255, 255, 255, 0.8)',
+          width: 1,
+          dashPattern: [5, 5]
+        },
+        sync: {
+          enabled: true
+        },
+        zoom: {
+          enabled: false
         }
       },
       annotation: {

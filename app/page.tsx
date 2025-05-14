@@ -17,6 +17,7 @@ import {
 import 'chartjs-adapter-date-fns';
 import { useScroll, useTransform } from 'framer-motion';
 import annotationPlugin from 'chartjs-plugin-annotation';
+import crosshairPlugin from 'chartjs-plugin-crosshair';
 
 import Header from './components/Header';
 import AboutSection from './components/AboutSection';
@@ -34,10 +35,16 @@ ChartJS.register(
   Tooltip,
   Legend,
   TimeScale,
-  annotationPlugin
+  annotationPlugin,
+  crosshairPlugin
 );
 
 const goldStandardEvents = [
+  {
+    date: '1933-04',
+    label: 'FDR abandons gold standard',
+    description: 'Executive Order 6102 prohibits private gold ownership for US citizens, effectively ending the gold standard domestically.'
+  },
   {
     date: '1971-08',
     label: 'Nixon ends convertibility',
