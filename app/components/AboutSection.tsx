@@ -32,6 +32,11 @@ export default function AboutSection({ goldStandardEvents }: AboutSectionProps) 
         <p>
           This pattern is evident following major monetary policy changes like 1933 (when FDR abandoned the domestic gold standard) and 1971 (when Nixon ended dollar convertibility to gold). Both periods saw stock markets rise in dollar terms while declining when measured in gold.
         </p>
+        
+        <p>
+          In 1933, FDR's decision to confiscate gold and devalue the dollar by 40% created an apparent stock market recovery. While the Dow Jones rose in dollar terms after this devaluation, it actually fell by over 20% when measured in gold ounces. Similarly, following Nixon's 1971 "temporary" suspension of dollar-gold convertibility, the stock market's nominal gains in the 1970s were completely erased when priced in gold. What looked like growth was actually currency debasement.
+        </p>
+        
         <p>
           The main chart displays two metrics:
         </p>
